@@ -1,0 +1,19 @@
+.header {
+  margin-bottom: 20px;
+  position: fixed;
+  top: 0;
+  .card_item {
+    position: relative;
+  }
+  .count {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    font-size: 12px;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    padding: 2px 6px;
+    border-radius: 50%;
+  }
+}
