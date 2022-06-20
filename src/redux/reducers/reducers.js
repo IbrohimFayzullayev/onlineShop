@@ -1,4 +1,4 @@
-import { GET_DATA, COUNT, BUY, REMOVE, USER, SANASH } from "../actions/action";
+import { GET_DATA, COUNT, BUY, REMOVE, USER } from "../actions/action";
 export const initial_state = {
   products: [],
   users: [],
@@ -63,14 +63,6 @@ const reducers = (state = initial_state, action) => {
       cards: state.cards,
       sana: state.sana,
       users: [...state.users, { id: ++state.users.length, ...action.payload }],
-    };
-  }
-  if (action.type === SANASH) {
-    return {
-      products: state.products,
-      cards: state.cards,
-      users: state.users,
-      sana: action.payload,
     };
   }
   return state;

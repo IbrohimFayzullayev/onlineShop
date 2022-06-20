@@ -5,7 +5,6 @@ export const COUNT = "COUNT";
 export const BUY = "BUY";
 export const REMOVE = "REMOVE";
 export const USER = " USER";
-export const SANASH = "SANASH";
 
 let arr;
 export const getDataAction = () => async (dispatch, getState) => {
@@ -50,11 +49,5 @@ export const saveUserAction = (name, lastname, city) => (dispatch) => {
   dispatch({
     type: USER,
     payload: { name, lastname, city },
-  });
-};
-export const countAction = (count) => (dispatch) => {
-  dispatch({
-    type: SANASH,
-    payload: count,
   });
 };
